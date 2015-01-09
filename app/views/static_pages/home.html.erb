@@ -2,14 +2,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-       <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+       <title><%= yield(:title) %> | Above The System</title>
   </head>
-  <body>
-    <h1>Sample App</h1>
-    <p>
-      This is the home page for the
-      <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
-    </p>
-  </body>
+  <div class="center jumbotron">
+    <center>
+      <h1>Welcome to Above The System</h1>
+
+      <h2>
+        <center>
+          This is the home page for the
+          <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+          sample application.
+        </center>
+      </h2>
+
+      <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+    </center>
+  </div>
+
+  <%= link_to image_tag("rails.png", alt: "Rails logo"),'http://rubyonrails.org/' %>
 </html>
