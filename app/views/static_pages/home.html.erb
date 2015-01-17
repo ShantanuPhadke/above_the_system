@@ -10,11 +10,32 @@
 
       <h2>
         <center>
-          This is the home page for the
-          <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-          sample application.
+          We are currently running a crowdfunder to help us develop the full scope of our services. The following chart shows the current statistics of our progress related to this goal: 
         </center>
       </h2>
+      <div class="panel panel-info">
+        <div class="panel-heading">Statistics</div>
+        <div class= "panel-body"> 
+          1 Backers  |  $50 raised out of $1000 |  100 days left
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
+          5%
+        </div>
+      </div>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_donations">
+        <input type="hidden" name="business" value="beabovethesystem@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Above the System">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
 
       <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
     </center>
